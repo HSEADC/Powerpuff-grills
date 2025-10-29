@@ -12,7 +12,6 @@ section {
   height: 100vh;
   width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-direction: column;
 }
@@ -35,42 +34,30 @@ p {
   align-self: flex-end;
 }
 .titleOnTop {
-  margin-top: 55rem;
+  margin-top: 72rem;
 }
 .gallery_container {
   display: flex;
-  margin-top: -135rem;
+  margin-top: 20rem;
+  transition: transform 0.5s ease-in-out;
 }
 .switchBack {
-  width: 0;
-  height: 0;
-  border-top: 26rem solid transparent;
-  border-right: 28.7rem solid rgb(0, 0, 0);
-  border-bottom: 26rem solid transparent;
+  width: 31rem;
   rotate: -15deg;
-  margin-top: 159rem;
+  margin-top: 95rem;
   margin-left: 8rem;
+  cursor: pointer;
 }
 .switchFurther {
-  width: 0;
-  height: 0;
-  border-top: 26rem solid transparent;
-  border-left: 28.7rem solid rgb(0, 0, 0);
-  border-bottom: 26rem solid transparent;
-  rotate: 15deg;
-  margin-top: 159rem;
+  width: 31rem;
+  rotate: -165deg;
+  margin-top: 95rem;
   margin-left: 8rem;
-  /* как было:
-  border-top: 31.5rem solid transparent;
-  border-left: 35rem solid rgb(0, 0, 0);
-  border-bottom: 31.5rem solid transparent;
-  rotate: 15deg;
-  margin-top: 194rem;
-  margin-left: 10rem; */
+  cursor: pointer;
 }
 .gallery_image {
-  width: 280rem;
-  height: 280rem;
+  width: 250rem;
+  height: 250rem;
   border-radius: 6rem;
 }
 .image1 {
@@ -88,24 +75,112 @@ p {
 }
 .image4 {
   rotate: -15deg;
-  margin-right: -70rem;
-  display: none;
+  margin-right: -50rem;
+  margin-left: 10rem;
 }
 .image5 {
-  display: none;
+  display: inline;
+  z-index: 2;
 }
 .image6 {
   rotate: 15deg;
-  margin-right: -92rem;
-  display: none;
+  margin-left: -50rem;
 }
 .description {
-  margin-top: 40rem;
+  margin-top: 70rem;
+}
+.link {
+  text-decoration: none;
+  color: rgb(145, 178, 210);
+}
+.link:hover {
+  transition: scale(1.1);
+  animation: colorChange 2s infinite ease-in-out;
+}
+@keyframes colorChange {
+  0% {
+    color: rgb(0, 0, 0);
+  }
+  20% {
+    color: rgb(145, 178, 210);
+  }
+  100% {
+    color: rgb(0, 0, 0);
+  }
+}
+.footer_container {
+  position: absolute;
+  width: 100vw;
+  height: 137rem;
+  left: 0;
+  bottom: 0;
+}
+.footer {
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  bottom: 0;
 }
 .media_container {
   display: flex;
   position: absolute;
   color: white;
-  top: 90%;
-  left: calc(50% - 102rem);
+  left: 45.5%;
+  bottom: 90rem;
+  z-index: 2;
+}
+.linkInFooter {
+  text-decoration: none;
+  color: white;
+}
+.tgLogo {
+  width: 28rem;
+}
+.tgLogo:hover {
+  transform: scale(1.2);
+  animation: shake 0.15s infinite;
+}
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+    transform: scale(1.1);
+  }
+  25% {
+    transform: rotate(5deg);
+    transform: scale(1.2);
+  }
+  50% {
+    transform: rotate(0eg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.email {
+  margin-left: 70rem;
+  cursor: pointer;
+}
+.email:hover {
+  transform: scale(1.2);
+  animation: shake 0.15s infinite;
+}
+.form {
+  width: 210rem;
+  height: 27rem;
+  margin-left: 15rem;
+}
+.hidden {
+  display: none;
+}
+.hideImg {
+  display: none !important;
+}
+.pointer {
+  cursor: pointer;
+}
+.pointer:hover {
+  transform: scale(1.3);
 }
