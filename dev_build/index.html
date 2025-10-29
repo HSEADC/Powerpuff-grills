@@ -1,25 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Duende</title>
+    <link rel="icon" href="images/76c8540c51e85e33e1d8.svg" />
   <script defer src="index.js"></script><link href="index.css" rel="stylesheet"></head>
   <body>
-    <h1>Главная</h1>
+    <section>
+      <header class="logo_container">
+        <p class="upLeftWord">by</p>
+        <img class="logo" src="images/57d5250dcf9518259b6c.svg" alt="logo" />
+        <p class="downRightWord">duende</p>
+      </header>
 
-    <h2>Категории</h2>
+      <p class="titleOnTop">coming soon</p>
 
-    <ul>
-      <li><a href="pages/articles.html">Статьи</a></li>
-      <li><a href="pages/tests.html">Тесты</a></li>
-      <li><a href="pages/dictionary.html">Словарь</a></li>
-    </ul>
+      <div class="gallery_container">
+        <!-- <button class="switchBack"></button> -->
+        <img class="switchBack" src="images/c14e19b72d691c669d3f.svg" alt="arrow"></img>
+        <img class="gallery_image image1 visible" src="images/60d17a4639baf8d52453.png" alt="img1" />
+        <img class="gallery_image image2 visible" src="images/1a0c968fba4315b76248.png" alt="img2" />
+        <img class="gallery_image image3 visible" src="images/91af8a06cf4c6cecabf3.png" alt="img3" />
+        <img class="gallery_image image4 hidden" src="images/b087d0db0aa8d3f033a7.png" alt="img4" />
+        <img class="gallery_image image5 hidden" src="images/446aa7e3a4c9a09ea4e7.png" alt="img5" />
+        <img class="gallery_image image6 hidden" src="images/94c4b14346531acf8dd7.png" alt="img6" />
+        <!-- <button class="switchFurther"></button> -->
+        <img class="switchFurther" src="images/c14e19b72d691c669d3f.svg" alt="arrow"></img>
+      </div>
 
-    <h3>Статьи</h3>
-    <a href="pages/articles/plants.html">Статья о растениях</a>
+      <p class="description">
+        Рассказываем о нишевых авторах и их работах
+        <a class="link" href="https://t.me/efijwpmx">в нашем тг</a>
+      </p>
 
-    <h3>Тесты</h3>
-    <a href="pages/tests/test1.html">Тест1</a>
+      <div class="footer_container">
+        <div class="media_container">
+          <a href="https://t.me/efijwpmx">
+            <img class="tgLogo" src="images/03c2b9dc4437fbdb14a0.svg" alt="tg_logo" />
+          </a> 
+          <img class="email" src="images/0bc2f02b9248d3a568d2.svg" alt="email" />
+          <form
+            action="https://formspree.io/f/xkgqavdl"
+            method="POST"
+          >
+            <label>
+              <input class="form hidden" type="email" name="email">
+            </label>
+            <button class="hidden pointer" type="submit">></button>
+          </form>
+          <!-- <a class="linkInFooter" href="https://t.me/efijwpmx">duende</a> -->
+        </div>
+        <img class="footer" src="images/ba31aecf4157e926615c.svg" alt="footer_image" />
+      </div>
+    </section>
   </body>
 </html>
