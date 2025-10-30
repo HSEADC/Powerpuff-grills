@@ -2,7 +2,8 @@ name: Build site
 
 on:
   push:
-    branches: ['gh-pages']
+    # branches: ['gh-pages']
+    branches: ['main']
 
   workflow_dispatch:
 
@@ -63,7 +64,8 @@ jobs:
 
   deploy:
     environment:
-      name: github-pages
+      # name: github-pages
+      name: main
       url: ${{ steps.deployment.outputs.page_url }}
 
     runs-on: ubuntu-latest
